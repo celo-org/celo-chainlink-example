@@ -17,7 +17,7 @@ export default function Home() {
       setAllPrices(prices);
       setLoading(false);
     });
-  }, []);
+  }, [getAllPrices]);
 
   if (loading) {
     return (
@@ -57,8 +57,8 @@ export default function Home() {
         <p className="">
           Souce:{" "}
           <span className="font-bold text-blue-500">
-            <a href="https://github.com/celo-org">
-              https://github.com/celo-org
+            <a href="https://github.com/celo-org/celo-chainlink-example">
+              https://github.com/celo-org/celo-chainlink-example
             </a>
           </span>
         </p>
