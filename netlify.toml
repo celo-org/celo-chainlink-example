@@ -6,7 +6,7 @@
   # If not set, defaults to the root directory.
   base = "/"
   publish = "packages/react-app/.next"
-  command = "yarn build-ui"
+  command = "yarn build"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
