@@ -1185,7 +1185,7 @@
     picocolors "^1.0.0"
     tslib "^2.5.0"
 
-"@rainbow-me/rainbowkit@^1.0.2":
+"@rainbow-me/rainbowkit@1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@rainbow-me/rainbowkit/-/rainbowkit-1.0.4.tgz#22f74c35ba036f7d1deb02528b162691ac5a32af"
   integrity sha512-ceW0azA1EynlM21zG/bpA7QsXx8taX3NoR78Z1RgbZwujM//6PWJQRGBA4VvHJkmuio/R2lfP51inJucs+i4gg==

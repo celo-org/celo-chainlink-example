@@ -38,18 +38,22 @@ export const Valora = ({
             connector,
             mobile: {
                 getUri: async () => {
-                    const { uri } = (await connector.getProvider()).connector;
+                    const provider = await connector.getProvider();
+                    const uri = await new Promise<string>(resolve => provider.once('display_uri', resolve))
                     return isAndroid()
                         ? uri
                         : // ideally this would use the WalletConnect registry, but this will do for now
-                          `https://valoraapp.com/wc?uri=${encodeURIComponent(
-                              uri
-                          )}`;
+                        `https://valoraapp.com/wc?uri=${encodeURIComponent(
+                            uri
+                        )}`;
                 },
             },
             qrCode: {
-                getUri: async () =>
-                    (await connector.getProvider()).connector.uri,
+                getUri: async () => {
+                    const provider = await connector.getProvider();
+                    const uri = await new Promise<string>(resolve => provider.once('display_uri', resolve))
+                    return uri
+                },
                 instructions: {
                     learnMoreUrl: "https://valoraapp.com/learn",
                     steps: [
