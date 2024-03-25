@@ -1074,9 +1074,7 @@
     fs-extra "^9.1.0"
 
 "@typechain/web3-v1@^6.0.1":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@typechain/web3-v1/-/web3-v1-6.0.2.tgz#3f801cdb0f160ae4cdc7e4591c1e61aff3c285f0"
-  integrity sha512-jiI15w1yZwXbXpcL4bHmtpOFWrOgmWQAeNHtzPiC2fHYNzxcJWB8E1KdWf30TAR2I9uT5fx10butLZYeHV1lNQ==
+  version "6.0.7"
   dependencies:
     lodash "^4.17.15"
     ts-essentials "^7.0.1"
