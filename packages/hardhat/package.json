@@ -29,7 +29,7 @@
         "ethereumjs-wallet": "^1.0.2",
         "ethers": "^5.7.2",
         "hardhat": "^2.12.1",
-        "hardhat-celo": "^0.0.3",
+        "hardhat-celo": "^0.0.7",
         "hardhat-deploy": "^0.11.19",
         "hardhat-gas-reporter": "^1.0.8",
         "node-watch": "^0.7.3",
